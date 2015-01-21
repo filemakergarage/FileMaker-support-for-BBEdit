@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+	@author Nils Waldherr <nils.waldherr@filemakergarage.com>
+	@version 2.0.0-101 - 15.11.2014 - NW 
+-->
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>Hole</string>
+		<string>Get</string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+
+<!-- Custom Function -->	
+		<string>_Date</string>
+		<string>_Date.format</string>
+		
+		<string>_Exception</string>
+		<string>_Exception.throw</string>
+		<string>_Exception.catch</string>
+		<string>_Exception.display</string>
+		<string>_Exception.log</string>
+		<string>$_Exception</string>
+
+		<string>_Script</string>
+		<string>_Script.init</string>
+		<string>_Script.set</string>
+		<string>_Script.prepare</string>
+		<string>_Script.result</string>
+		
+		<string>_XML</string>
+
+<!-- EN Operators, 15.01.2015 - NW -->
+		<string>OR</string>
+		<string>AND</string>
+		<string>NOT</string>
+		<string>XOR</string>
+		<string>+</string>
+		<string>-</string>
+		<string>=</string>
+		<string>≠</string>
+	
+<!-- EN functions, 15.01.2015 - NW -->
+		<string>Average</string>
+		<string>Count</string>
+		<string>List</string>
+		<string>Max</string>
+		<string>Min</string>
+		<string>StDev</string>
+		<string>StDevP</string>
+		<string>Sum</string>
+		<string>Variance</string>
+		<string>VarianceP</string>
+
+		<string>Base64Decode</string>
+		<string>Base64Encode</string>
+		<string>GetContainerAttribute</string>
+		<string>GetHeight</string>
+		<string>GetThumbnail</string>
+		<string>GetWidth</string>
+		<string>VerifyContainer</string>
+
+		<string>Date</string>
+		<string>Day</string>
+		<string>DayName</string>
+		<string>DayNameJ</string>
+		<string>DayOfWeek</string>
+		<string>DayOfYear</string>
+		<string>Month</string>
+		<string>MonthName</string>
+		<string>MonthNameJ</string>
+		<string>WeekOfYear</string>
+		<string>WeekOfYearFiscal</string>
+		<string>Year</string>
+		<string>YearName</string>
+
+		<string>DatabaseNames</string>
+		<string>FieldBounds</string>
+		<string>FieldComment</string>
+		<string>FieldIDs</string>
+		<string>FieldNames</string>
+		<string>FieldRepetitions</string>
+		<string>FieldStyle</string>
+		<string>FieldType</string>
+		<string>GetNextSerialValue</string>
+		<string>LayoutIDs</string>
+		<string>LayoutNames</string>
+		<string>LayoutObjectNames</string>
+		<string>RelationInfo</string>
+		<string>ScriptIDs</string>
+		<string>ScriptNames</string>
+		<string>TableIDs</string>
+		<string>TableNames</string>
+		<string>ValueListIDs</string>
+		<string>ValueListItems</string>
+		<string>ValueListNames</string>
+		<string>WindowNames</string>
+
+		<string>FV</string>
+		<string>NPV</string>
+		<string>PMT</string>
+		<string>PV</string>
+
+		<string>Get( AccountExtendedPrivileges )</string>
+			<string>AccountExtendedPrivileges</string>
+		<string>Get( AccountName )</string>
+			<string>AccountName</string>
+		<string>Get( AccountPrivilegeSetName )</string>
+			<string>AccountPrivilegeSetName</string>
+		<string>Get( ActiveFieldContents )</string>
+			<string>ActiveFieldContents</string>
+		<string>Get( ActiveFieldName )</string>
+			<string>ActiveFieldName</string>
+		<string>Get( ActiveFieldTableName )</string>
+			<string>ActiveFieldTableName</string>
+		<string>Get( ActiveLayoutObjectName )</string>
+			<string>ActiveLayoutObjectName</string>
+		<string>Get( ActiveModifierKeys )</string>
+			<string>ActiveModifierKeys</string>
+		<string>Get( ActivePortalRowNumber )</string>
+			<string>ActivePortalRowNumber</string>
+		<string>Get( ActiveRepetitionNumber )</string>
+			<string>ActiveRepetitionNumber</string>
+		<string>Get( ActiveSelectionSize )</string>
+			<string>ActiveSelectionSize</string>
+		<string>Get( ActiveSelectionStart )</string>
+			<string>ActiveSelectionStart</string>
+		<string>Get( AllowAbortState )</string>
+			<string>AllowAbortState</string>
+		<string>Get( AllowFormattingBarState )</string>
+			<string>AllowFormattingBarState</string>
+		<string>Get( ApplicationLanguage )</string>
+			<string>ApplicationLanguage</string>
+		<string>Get( ApplicationVersion )</string>
+			<string>ApplicationVersion</string>
+		<string>Get( CalculationRepetitionNumber )</string>
+			<string>CalculationRepetitionNumber</string>
+		<string>Get( ConnectionAttributes )</string>
+			<string>ConnectionAttributes</string>
+		<string>Get( ConnectionState )</string>
+			<string>ConnectionState</string>
+		<string>Get( CurrentDate )</string>
+			<string>CurrentDate</string>
+		<string>Get( CurrentExtendedPrivileges )</string>
+			<string>CurrentExtendedPrivileges</string>
+		<string>Get( CurrentHostTimestamp )</string>
+			<string>CurrentHostTimestamp</string>
+		<string>Get( CurrentPrivilegeSetName )</string>
+			<string>CurrentPrivilegeSetName</string>
+		<string>Get( CurrentTime )</string>
+			<string>CurrentTime</string>
+		<string>Get( CurrentTimestamp )</string>
+			<string>CurrentTimestamp</string>
+		<string>Get( CurrentTimeUTCMilliseconds )</string>
+			<string>CurrentTimeUTCMilliseconds</string>
+		<string>Get( CustomMenuSetName )</string>
+			<string>CustomMenuSetName</string>
+		<string>Get( DesktopPath )</string>
+			<string>DesktopPath</string>
+		<string>Get( Device )</string>
+			<string>Device</string>
+		<string>Get( DocumentsPath )</string>
+			<string>DocumentsPath</string>
+		<string>Get( DocumentsPathListing )</string>
+			<string>DocumentsPathListing</string>
+		<string>Get( EncryptionState )</string>
+			<string>EncryptionState</string>
+		<string>Get( ErrorCaptureState )</string>
+			<string>ErrorCaptureState</string>
+		<string>Get( FileMakerPath )</string>
+			<string>FileMakerPath</string>
+		<string>Get( FileName )</string>
+			<string>FileName</string>
+		<string>Get( FilePath )</string>
+			<string>FilePath</string>
+		<string>Get( FileSize )</string>
+			<string>FileSize</string>
+		<string>Get( FoundCount )</string>
+			<string>FoundCount</string>
+		<string>Get( HighContrastColor )</string>
+			<string>HighContrastColor</string>
+		<string>Get( HighContrastState )</string>
+			<string>HighContrastState</string>
+		<string>Get( HostApplicationVersion )</string>
+			<string>HostApplicationVersion</string>
+		<string>Get( HostIPAddress )</string>
+			<string>HostIPAddress</string>
+		<string>Get( HostName )</string>
+			<string>HostName</string>
+		<string>Get( InstalledFMPlugins )</string>
+			<string>InstalledFMPlugins</string>
+		<string>Get( LastError )</string>
+			<string>LastError</string>
+		<string>Get( LastMessageChoice )</string>
+			<string>LastMessageChoice</string>
+		<string>Get( LastODBCError )</string>
+			<string>LastODBCError</string>
+		<string>Get( LayoutAccess )</string>
+			<string>LayoutAccess</string>
+		<string>Get( LayoutCount )</string>
+			<string>LayoutCount</string>
+		<string>Get( LayoutName )</string>
+			<string>LayoutName</string>
+		<string>Get( LayoutNumber )</string>
+			<string>LayoutNumber</string>
+		<string>Get( LayoutTableName )</string>
+			<string>LayoutTableName</string>
+		<string>Get( LayoutViewState )</string>
+			<string>LayoutViewState</string>
+		<string>Get( ModifiedFields )</string>
+			<string>ModifiedFields</string>
+		<string>Get( MultiUserState )</string>
+			<string>MultiUserState</string>
+		<string>Get( NetworkProtocol )</string>
+			<string>NetworkProtocol</string>
+		<string>Get( NetworkType )</string>
+			<string>NetworkType</string>
+		<string>Get( PageNumber )</string>
+			<string>PageNumber</string>
+		<string>Get( PersistentID )</string>
+			<string>PersistentID</string>
+		<string>Get( PreferencesPath )</string>
+			<string>PreferencesPath</string>
+		<string>Get( PrinterName )</string>
+			<string>PrinterName</string>
+		<string>Get( QuickFindText )</string>
+			<string>QuickFindText</string>
+		<string>Get( RecordAccess )</string>
+			<string>RecordAccess</string>
+		<string>Get( RecordID )</string>
+			<string>RecordID</string>
+		<string>Get( RecordModificationCount )</string>
+			<string>RecordModificationCount</string>
+		<string>Get( RecordNumber )</string>
+			<string>RecordNumber</string>
+		<string>Get( RecordOpenCount )</string>
+			<string>RecordOpenCount</string>
+		<string>Get( RecordOpenState )</string>
+			<string>RecordOpenState</string>
+		<string>Get( RequestCount )</string>
+			<string>RequestCount</string>
+		<string>Get( RequestOmitState )</string>
+			<string>RequestOmitState</string>
+		<string>Get( ScreenDepth )</string>
+			<string>ScreenDepth</string>
+		<string>Get( ScreenHeight )</string>
+			<string>ScreenHeight</string>
+		<string>Get( ScreenWidth )</string>
+			<string>ScreenWidth</string>
+		<string>Get( ScriptAnimationState )</string>
+			<string>ScriptAnimationState</string>
+		<string>Get( ScriptName )</string>
+			<string>ScriptName</string>
+		<string>Get( ScriptParameter )</string>
+			<string>ScriptParameter</string>
+		<string>Get( ScriptResult )</string>
+			<string>ScriptResult</string>
+		<string>Get( SortState )</string>
+			<string>SortState</string>
+		<string>Get( StatusAreaState )</string>
+			<string>StatusAreaState</string>
+		<string>Get( SystemDrive )</string>
+			<string>SystemDrive</string>
+		<string>Get( SystemIPAddress )</string>
+			<string>SystemIPAddress</string>
+		<string>Get( SystemLanguage )</string>
+			<string>SystemLanguage</string>
+		<string>Get( SystemNICAddress )</string>
+			<string>SystemNICAddress</string>
+		<string>Get( SystemPlatform )</string>
+			<string>SystemPlatform</string>
+		<string>Get( SystemVersion )</string>
+			<string>SystemVersion</string>
+		<string>Get( TemporaryPath )</string>
+			<string>TemporaryPath</string>
+		<string>Get( TextRulerVisible )</string>
+			<string>TextRulerVisible</string>
+		<string>Get( TotalRecordCount )</string>
+			<string>TotalRecordCount</string>
+		<string>Get( TriggerCurrentPanel )</string>
+			<string>TriggerCurrentPanel</string>
+		<string>Get( TriggerGestureInfo )</string>
+			<string>TriggerGestureInfo</string>
+		<string>Get( TriggerKeystroke )</string>
+			<string>TriggerKeystroke</string>
+		<string>Get( TriggerModifierKeys )</string>
+			<string>TriggerModifierKeys</string>
+		<string>Get( TriggerTargetPanel )</string>
+			<string>TriggerTargetPanel</string>
+		<string>Get( UserCount )</string>
+			<string>UserCount</string>
+		<string>Get( UserName )</string>
+			<string>UserName</string>
+		<string>Get( UseSystemFormatsState )</string>
+			<string>UseSystemFormatsState</string>
+		<string>Get( UUID )</string>
+			<string>UUID</string>
+		<string>Get( WindowContentHeight )</string>
+			<string>WindowContentHeight</string>
+		<string>Get( WindowContentWidth )</string>
+			<string>WindowContentWidth</string>
+		<string>Get( WindowDesktopHeight )</string>
+			<string>WindowDesktopHeight</string>
+		<string>Get( WindowDesktopWidth )</string>
+			<string>WindowDesktopWidth</string>
+		<string>Get( WindowHeight )</string>
+			<string>WindowHeight</string>
+		<string>Get( WindowLeft )</string>
+			<string>WindowLeft</string>
+		<string>Get( WindowMode )</string>
+			<string>WindowMode</string>
+		<string>Get( WindowName )</string>
+			<string>WindowName</string>
+		<string>Get( WindowOrientation )</string>
+			<string>WindowOrientation</string>
+		<string>Get( WindowStyle )</string>
+			<string>WindowStyle</string>
+		<string>Get( WindowTop )</string>
+			<string>WindowTop</string>
+		<string>Get( WindowVisible )</string>
+			<string>WindowVisible</string>
+		<string>Get( WindowWidth )</string>
+			<string>WindowWidth</string>
+		<string>Get( WindowZoomLevel )</string>
+			<string>WindowZoomLevel</string>
+
+		<string>Case</string>
+		<string>Choose</string>
+		<string>Evaluate</string>
+		<string>EvaluationError</string>
+		<string>ExecuteSQL</string>
+		<string>GetAsBoolean</string>
+		<string>GetField</string>
+		<string>GetFieldName</string>
+		<string>GetLayoutObjectAttribute</string>
+		<string>GetNthRecord</string>
+		<string>If</string>
+		<string>IsEmpty</string>
+		<string>IsValid</string>
+		<string>IsValidExpression</string>
+		<string>Let</string>
+		<string>Lookup</string>
+		<string>LookupNext</string>
+		<string>Self</string>
+
+		<string>Location</string>
+		<string>LocationValues</string>
+
+		<string>Abs</string>
+		<string>Ceiling</string>
+		<string>Combination</string>
+		<string>Div</string>
+		<string>Exp</string>
+		<string>Factorial</string>
+		<string>Floor</string>
+		<string>Int</string>
+		<string>Lg</string>
+		<string>Ln</string>
+		<string>Log</string>
+		<string>Mod</string>
+		<string>Random</string>
+		<string>Round</string>
+		<string>SetPrecision</string>
+		<string>Sign</string>
+		<string>Sqrt</string>
+		<string>Truncate</string>
+
+		<string>Extend</string>
+		<string>GetRepetition</string>
+		<string>Last</string>
+
+		<string>GetSummary</string>
+
+		<string>Char</string>
+		<string>Code</string>
+		<string>Exact</string>
+		<string>Filter</string>
+		<string>FilterValues</string>
+		<string>GetAsCSS</string>
+		<string>GetAsDate</string>
+		<string>GetAsNumber</string>
+		<string>GetAsSVG</string>
+		<string>GetAsText</string>
+		<string>GetAsTime</string>
+		<string>GetAsTimestamp</string>
+		<string>GetAsURLEncoded</string>
+		<string>GetValue</string>
+		<string>Hiragana</string>
+		<string>KanaHankaku</string>
+		<string>KanaZenkaku</string>
+		<string>KanjiNumeral</string>
+		<string>Katakana</string>
+		<string>Left</string>
+		<string>LeftValues</string>
+		<string>LeftWords</string>
+		<string>Length</string>
+		<string>Lower</string>
+		<string>Middle</string>
+		<string>MiddleValues</string>
+		<string>MiddleWords</string>
+		<string>NumToJText</string>
+		<string>PatternCount</string>
+		<string>Position</string>
+		<string>Proper</string>
+		<string>Quote</string>
+		<string>Replace</string>
+		<string>Right</string>
+		<string>RightValues</string>
+		<string>RightWords</string>
+		<string>RomanHankaku</string>
+		<string>RomanZenkaku</string>
+		<string>SerialIncrement</string>
+		<string>Substitute</string>
+		<string>Trim</string>
+		<string>TrimAll</string>
+		<string>Upper</string>
+		<string>ValueCount</string>
+		<string>WordCount</string>
+
+		<string>RGB</string>
+		<string>TextColor</string>
+		<string>TextColorRemove</string>
+		<string>TextFont</string>
+		<string>TextFontRemove</string>
+		<string>TextFormatRemove</string>
+		<string>TextSize</string>
+		<string>TextSizeRemove</string>
+		<string>TextStyleAdd</string>
+		<string>TextStyleRemove</string>
+
+		<string>Hour</string>
+		<string>Minute</string>
+		<string>Seconds</string>
+		<string>Time</string>
+
+		<string>Timestamp</string>
+
+		<string>Acos</string>
+		<string>Asin</string>
+		<string>Atan</string>
+		<string>Cos</string>
+		<string>Degrees</string>
+		<string>Pi</string>
+		<string>Radians</string>
+		<string>Sin</string>
+		<string>Tan</string>
+		
+<!-- DE functions, 15.01.2015 - NW -->
+		<string>Mittelwert</string>
+		<string>Anzahl</string>
+		<string>Liste</string>
+		<string>Max</string>
+		<string>Min</string>
+		<string>StAbw</string>
+		<string>StAbwG</string>
+		<string>Summe</string>
+		<string>Varianz</string>
+		<string>VarianzG</string>
+
+		<string>Base64Dekodieren</string>
+		<string>Base64Kodieren</string>
+		<string>HoleContainerAttribute</string>
+		<string>HoleHöhe</string>
+		<string>HoleVorschaubild</string>
+		<string>HoleBreite</string>
+		<string>ContainerPrüfen</string>
+
+		<string>Datum</string>
+		<string>KalendertagZahl</string>
+		<string>WochentagName</string>
+		<string>WochentagNameJap</string>
+		<string>WochentagZahl</string>
+		<string>TagDesJahres</string>
+		<string>MonatZahl</string>
+		<string>MonatName</string>
+		<string>MonatsNameJap</string>
+		<string>KalenderWoche</string>
+		<string>WocheImFiskaljahr</string>
+		<string>Jahreszahl</string>
+		<string>JahresNameJap</string>
+
+		<string>DatenbankNamen</string>
+		<string>FeldLayoutPosition</string>
+		<string>FeldKommentar</string>
+		<string>FeldIDs</string>
+		<string>FeldNamen</string>
+		<string>FeldLayoutAnzahlWdh</string>
+		<string>FeldLayoutStil</string>
+		<string>FeldTyp</string>
+		<string>HoleNächsteFortlNr</string>
+		<string>LayoutIDs</string>
+		<string>LayoutNamen</string>
+		<string>LayoutobjektNamen</string>
+		<string>BeziehungsInfo</string>
+		<string>ScriptIDs</string>
+		<string>ScriptNamen</string>
+		<string>TabellenIDs</string>
+		<string>TabellenNamen</string>
+		<string>WertelistenIDs</string>
+		<string>WertelisteEinträge</string>
+		<string>WertelistenNamen</string>
+		<string>Fensternamen</string>
+
+		<string>ZW</string>
+		<string>NBW</string>
+		<string>KR</string>
+		<string>BW</string>
+
+		<string>Hole ( KontoErweiterteZugriffsrechte )</string>
+			<string>Hole ( KontoErweiterteZugriffsrechte</string>
+		<string>Hole ( Kontoname )</string>
+			<string>Hole ( Kontoname</string>
+		<string>Hole ( KontoBerechtigungenName )</string>
+			<string>Hole ( KontoBerechtigungenName</string>
+		<string>Hole ( AktivesFeldInhalt )</string>
+			<string>Hole ( AktivesFeldInhalt</string>
+		<string>Hole ( AktivesFeldName )</string>
+			<string>Hole ( AktivesFeldName</string>
+		<string>Hole ( AktivesFeldTabellenName )</string>
+			<string>Hole ( AktivesFeldTabellenName</string>
+		<string>Hole ( AktivesLayoutobjektName )</string>
+			<string>Hole ( AktivesLayoutobjektName</string>
+		<string>Hole ( SonderTastenGedrückt )</string>
+			<string>Hole ( SonderTastenGedrückt</string>
+		<string>Hole ( AktiveAusschnittZeilenNr )</string>
+			<string>Hole ( AktiveAusschnittZeilenNr</string>
+		<string>Hole ( AktivesFeldWiederholungNr )</string>
+			<string>Hole ( AktivesFeldWiederholungNr</string>
+		<string>Hole ( AktiveTextAuswahlGröße )</string>
+			<string>Hole ( AktiveTextAuswahlGröße</string>
+		<string>Hole ( AktiveTextAuswahlStart )</string>
+			<string>Hole ( AktiveTextAuswahlStart</string>
+		<string>Hole ( AnwenderAbbruchZulassenStatus )</string>
+			<string>Hole ( AnwenderAbbruchZulassenStatus</string>
+		<string>Hole ( FormatierungsleisteZulassenStatus )</string>
+			<string>Hole ( FormatierungsleisteZulassenStatus</string>
+		<string>Hole ( ProgrammSprache )</string>
+			<string>Hole ( ProgrammSprache</string>
+		<string>Hole ( ProgrammVersion )</string>
+			<string>Hole ( ProgrammVersion</string>
+		<string>Hole ( FormelWiederholungNr )</string>
+			<string>Hole ( FormelWiederholungNr</string>
+		<string>Hole ( VerbindungsAttribute )</string>
+			<string>Hole ( VerbindungsAttribute</string>
+		<string>Hole ( Verbindungsstatus )</string>
+			<string>Hole ( Verbindungsstatus</string>
+		<string>Hole ( SystemDatum )</string>
+			<string>Hole ( SystemDatum</string>
+		<string>Hole ( AktuelleErweiterteZugriffsrechte )</string>
+			<string>Hole ( AktuelleErweiterteZugriffsrechte</string>
+		<string>Hole ( HostZeitstempel )</string>
+			<string>Hole ( HostZeitstempel</string>
+		<string>Hole ( AktuelleBerechtigungenName )</string>
+			<string>Hole ( AktuelleBerechtigungenName</string>
+		<string>Hole ( SystemUhrzeit )</string>
+			<string>Hole ( SystemUhrzeit</string>
+		<string>Hole ( SystemZeitstempel )</string>
+			<string>Hole ( SystemZeitstempel</string>
+		<string>Hole ( SystemUhrzeitUTCMillisekunden )</string>
+			<string>Hole ( SystemUhrzeitUTCMillisekunden</string>
+		<string>Hole ( AngepasstenMenüsetName )</string>
+			<string>Hole ( AngepasstenMenüsetName</string>
+		<string>Hole ( DesktopPfad )</string>
+			<string>Hole ( DesktopPfad</string>
+		<string>Hole ( Gerät )</string>
+			<string>Hole ( Gerät</string>
+		<string>Hole ( DokumentenPfad )</string>
+			<string>Hole ( DokumentenPfad</string>
+		<string>Hole ( DokumentePfadListe )</string>
+			<string>Hole ( DokumentePfadListe</string>
+		<string>Hole ( Verschlüsselungsstatus )</string>
+			<string>Hole ( Verschlüsselungsstatus</string>
+		<string>Hole ( FehleraufzeichnungAktivStatus )</string>
+			<string>Hole ( FehleraufzeichnungAktivStatus</string>
+		<string>Hole ( FileMakerPfad )</string>
+			<string>Hole ( FileMakerPfad</string>
+		<string>Hole ( DateiName )</string>
+			<string>Hole ( DateiName</string>
+		<string>Hole ( DateiPfad )</string>
+			<string>Hole ( DateiPfad</string>
+		<string>Hole ( DateiGrößeBytes )</string>
+			<string>Hole ( DateiGrößeBytes</string>
+		<string>Hole ( AnzahlGefundeneDatensätze )</string>
+			<string>Hole ( AnzahlGefundeneDatensätze</string>
+		<string>Hole ( HoherKontrastFarbe )</string>
+			<string>Hole ( HoherKontrastFarbe</string>
+		<string>Hole ( HoherKontrastStatus )</string>
+			<string>Hole ( HoherKontrastStatus</string>
+		<string>Hole ( HostAnwendungVersion )</string>
+			<string>Hole ( HostAnwendungVersion</string>
+		<string>Hole ( HostIPAdresse )</string>
+			<string>Hole ( HostIPAdresse</string>
+		<string>Hole ( HostName )</string>
+			<string>Hole ( HostName</string>
+		<string>Hole ( InstallierteFMPlugins )</string>
+			<string>Hole ( InstallierteFMPlugins</string>
+		<string>Hole ( LetzteFehlerNr )</string>
+			<string>Hole ( LetzteFehlerNr</string>
+		<string>Hole ( LetzteMeldungswahl )</string>
+			<string>Hole ( LetzteMeldungswahl</string>
+		<string>Hole ( LetztenODBCFehler )</string>
+			<string>Hole ( LetztenODBCFehler</string>
+		<string>Hole ( LayoutBerechtigungen )</string>
+			<string>Hole ( LayoutBerechtigungen</string>
+		<string>Hole ( DateiLayoutanzahl )</string>
+			<string>Hole ( DateiLayoutanzahl</string>
+		<string>Hole ( LayoutName )</string>
+			<string>Hole ( LayoutName</string>
+		<string>Hole ( LayoutNummer )</string>
+			<string>Hole ( LayoutNummer</string>
+		<string>Hole ( LayoutTabellenname )</string>
+			<string>Hole ( LayoutTabellenname</string>
+		<string>Hole ( LayoutAnzeigeAlsStatus )</string>
+			<string>Hole ( LayoutAnzeigeAlsStatus</string>
+		<string>Hole ( GeänderteFelder )</string>
+			<string>Hole ( GeänderteFelder</string>
+		<string>Hole ( DateiMehrbenutzerstatus )</string>
+			<string>Hole ( DateiMehrbenutzerstatus</string>
+		<string>Hole ( Netzwerkprotokoll )</string>
+			<string>Hole ( Netzwerkprotokoll</string>
+		<string>Hole ( Netzwerktyp )</string>
+			<string>Hole ( Netzwerktyp</string>
+		<string>Hole ( Seitennummer )</string>
+			<string>Hole ( Seitennummer</string>
+		<string>Hole ( PersistentID )</string>
+			<string>Hole ( PersistentID</string>
+		<string>Hole ( EinstellungenPfad )</string>
+			<string>Hole ( EinstellungenPfad</string>
+		<string>Hole ( Druckername )</string>
+			<string>Hole ( Druckername</string>
+		<string>Hole ( SchnellsucheText )</string>
+			<string>Hole ( SchnellsucheText</string>
+		<string>Hole ( DatensatzBerechtigungen )</string>
+			<string>Hole ( DatensatzBerechtigungen</string>
+		<string>Hole ( DatensatzIDNr )</string>
+			<string>Hole ( DatensatzIDNr</string>
+		<string>Hole ( DatensatzÄnderungenAnzahl )</string>
+			<string>Hole ( DatensatzÄnderungenAnzahl</string>
+		<string>Hole ( DatensatzPositionInErgebnismenge )</string>
+			<string>Hole ( DatensatzPositionInErgebnismenge</string>
+		<string>Hole ( DatensatzOffenAnzahl )</string>
+			<string>Hole ( DatensatzOffenAnzahl</string>
+		<string>Hole ( DatensatzOffenStatus )</string>
+			<string>Hole ( DatensatzOffenStatus</string>
+		<string>Hole ( AnzahlAbfrageEinträge )</string>
+			<string>Hole ( AnzahlAbfrageEinträge</string>
+		<string>Hole ( AbfrageAusschlussStatus )</string>
+			<string>Hole ( AbfrageAusschlussStatus</string>
+		<string>Hole ( Bildschirmtiefe )</string>
+			<string>Hole ( Bildschirmtiefe</string>
+		<string>Hole ( Bildschirmhöhe )</string>
+			<string>Hole ( Bildschirmhöhe</string>
+		<string>Hole ( Bildschirmbreite )</string>
+			<string>Hole ( Bildschirmbreite</string>
+		<string>Hole ( ScriptAnimationStatus )</string>
+			<string>Hole ( ScriptAnimationStatus</string>
+		<string>Hole ( ScriptName )</string>
+			<string>Hole ( ScriptName</string>
+		<string>Hole ( ScriptParameter )</string>
+			<string>Hole ( ScriptParameter</string>
+		<string>Hole ( ScriptErgebnis )</string>
+			<string>Hole ( ScriptErgebnis</string>
+		<string>Hole ( Sortierstatus )</string>
+			<string>Hole ( Sortierstatus</string>
+		<string>Hole ( StatusbereichSichtbarStatus )</string>
+			<string>Hole ( StatusbereichSichtbarStatus</string>
+		<string>Hole ( SystemLaufwerk )</string>
+			<string>Hole ( SystemLaufwerk</string>
+		<string>Hole ( SystemIPAdresse )</string>
+			<string>Hole ( SystemIPAdresse</string>
+		<string>Hole ( SystemSprache )</string>
+			<string>Hole ( SystemSprache</string>
+		<string>Hole ( SystemNICAdresse )</string>
+			<string>Hole ( SystemNICAdresse</string>
+		<string>Hole ( SystemPlattform )</string>
+			<string>Hole ( SystemPlattform</string>
+		<string>Hole ( SystemVersion )</string>
+			<string>Hole ( SystemVersion</string>
+		<string>Hole ( TemporärerPfad )</string>
+			<string>Hole ( TemporärerPfad</string>
+		<string>Hole ( TextlinealSichtbar )</string>
+			<string>Hole ( TextlinealSichtbar</string>
+		<string>Hole ( AnzahlDatensätzeGesamt )</string>
+			<string>Hole ( AnzahlDatensätzeGesamt</string>
+		<string>Hole ( TriggerAktuellerBereich )</string>
+			<string>Hole ( TriggerAktuellerBereich</string>
+		<string>Hole ( TriggerGestenInfo )</string>
+			<string>Hole ( TriggerGestenInfo</string>
+		<string>Hole ( TriggerTastendruck )</string>
+			<string>Hole ( TriggerTastendruck</string>
+		<string>Hole ( TriggerKurztasten )</string>
+			<string>Hole ( TriggerKurztasten</string>
+		<string>Hole ( TriggerZielbereich )</string>
+			<string>Hole ( TriggerZielbereich</string>
+		<string>Hole ( AnzahlAktiveBenutzer )</string>
+			<string>Hole ( AnzahlAktiveBenutzer</string>
+		<string>Hole ( ProgrammBenutzername )</string>
+			<string>Hole ( ProgrammBenutzername</string>
+		<string>Hole ( SystemformateVerwendenStatus )</string>
+			<string>Hole ( SystemformateVerwendenStatus</string>
+		<string>Hole ( UUID )</string>
+			<string>Hole ( UUID</string>
+		<string>Hole ( FensterInhaltHöhe )</string>
+			<string>Hole ( FensterInhaltHöhe</string>
+		<string>Hole ( FensterInhaltBreite )</string>
+			<string>Hole ( FensterInhaltBreite</string>
+		<string>Hole ( FensterSchreibtischHöhe )</string>
+			<string>Hole ( FensterSchreibtischHöhe</string>
+		<string>Hole ( FensterSchreibtischBreite )</string>
+			<string>Hole ( FensterSchreibtischBreite</string>
+		<string>Hole ( Fensterhöhe )</string>
+			<string>Hole ( Fensterhöhe</string>
+		<string>Hole ( FensterLinks )</string>
+			<string>Hole ( FensterLinks</string>
+		<string>Hole ( Fenstermodus )</string>
+			<string>Hole ( Fenstermodus</string>
+		<string>Hole ( Fenstername )</string>
+			<string>Hole ( Fenstername</string>
+		<string>Hole ( Fensterausrichtung )</string>
+			<string>Hole ( Fensterausrichtung</string>
+		<string>Hole ( Fensterstil )</string>
+			<string>Hole ( Fensterstil</string>
+		<string>Hole ( FensterOben )</string>
+			<string>Hole ( FensterOben</string>
+		<string>Hole ( FensterSichtbar )</string>
+			<string>Hole ( FensterSichtbar</string>
+		<string>Hole ( Fensterbreite )</string>
+			<string>Hole ( Fensterbreite</string>
+		<string>Hole ( FensterZoomStufe )</string>
+			<string>Hole ( FensterZoomStufe</string>
+
+		<string>Falls</string>
+		<string>Auswahl</string>
+		<string>Berechne</string>
+		<string>BerechnungsFehler</string>
+		<string>SQLAusführen</string>
+		<string>LiesAlsBoolean</string>
+		<string>HoleFeldwert</string>
+		<string>HoleFeldname</string>
+		<string>LiesLayoutobjektAttribut</string>
+		<string>HoleNtenDatensatz</string>
+		<string>Wenn</string>
+		<string>IstLeer</string>
+		<string>IstGültig</string>
+		<string>IstGültigBerechnung</string>
+		<string>SetzeVar</string>
+		<string>ReferenzFeldwert</string>
+		<string>ReferenzFeldwertNächster</string>
+		<string>Selbst</string>
+
+		<string>Standort</string>
+		<string>Standortwerte</string>
+
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+		<string>Zahlenfunktionen</string>
+
+		<string>Wiederholfunktionen</string>
+		<string>Wiederholfunktionen</string>
+		<string>Wiederholfunktionen</string>
+
+		<string>Auswertungsfunktionen</string>
+
+		<string>Char</string>
+		<string>Code</string>
+		<string>Exakt</string>
+		<string>FilterZeichen</string>
+		<string>FilterElemente</string>
+		<string>LiesAlsCSS</string>
+		<string>LiesAlsDatum</string>
+		<string>LiesAlsZahl</string>
+		<string>LiesAlsSVG</string>
+		<string>LiesAlsText</string>
+		<string>LiesAlsZeit</string>
+		<string>LiesAlsZeitstempel</string>
+		<string>LiesAlsURLVerschlüsselt</string>
+		<string>HoleWert</string>
+		<string>Hiragana</string>
+		<string>KanaHankaku</string>
+		<string>KanaZenkaku</string>
+		<string>KanjiNumeral</string>
+		<string>Katakana</string>
+		<string>ZeichenLinks</string>
+		<string>ElementeLinks</string>
+		<string>WörterLinks</string>
+		<string>Länge</string>
+		<string>Kleinbuchstaben</string>
+		<string>ZeichenMitte</string>
+		<string>ElementeMitte</string>
+		<string>WörterMitte</string>
+		<string>ZahlZuTextJ</string>
+		<string>MusterAnzahl</string>
+		<string>Position</string>
+		<string>GroßKleinbuchstaben</string>
+		<string>Zitat</string>
+		<string>Ersetzen</string>
+		<string>ZeichenRechts</string>
+		<string>ElementeRechts</string>
+		<string>WörterRechts</string>
+		<string>LateinischZuHankaku</string>
+		<string>LateinischZuZenkaku</string>
+		<string>FortlNrInTextÄndern</string>
+		<string>Austauschen</string>
+		<string>Trimme</string>
+		<string>TrimmeAlle</string>
+		<string>Großbuchstaben</string>
+		<string>ElementeAnzahl</string>
+		<string>WörterAnzahl</string>
+
+		<string>RGB</string>
+		<string>TextFarbe</string>
+		<string>TextFarbeEntfernen</string>
+		<string>TextFont</string>
+		<string>TextFontEntfernen</string>
+		<string>TextFormatEntfernen</string>
+		<string>TextGröße</string>
+		<string>TextGrößeEntfernen</string>
+		<string>TextStilZufügen</string>
+		<string>TextStilEntfernen</string>
+
+		<string>Stunden</string>
+		<string>Minuten</string>
+		<string>Sekunden</string>
+		<string>Zeit</string>
+
+		<string>ZeitStempel</string>
+
+		<string>Arccos</string>
+		<string>Arcsin</string>
+		<string>Arctan</string>
+		<string>Cos</string>
+		<string>Grad</string>
+		<string>Pi</string>
+		<string>Bogenmaß</string>
+		<string>Sin</string>
+		<string>Tan</string>
+
+
+
+	</array>
+	<key>BBLMLanguageCode</key>
+	<string>FMDE</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>FileMaker DE</string>
+	<key>BBLMScansFunctions</key>
+	<true/>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.fmsource</string>
+		</dict>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Close Block Comments</key>
+		<string>*/</string>
+		<key>Close Parameter Lists</key>
+		<string>)</string>
+		<key>Close Statement Blocks</key>
+		<string>)</string>
+		<key>Close Strings 1</key>
+		<string>'</string>
+		<key>Close Strings 2</key>
+		<string>"</string>
+		<key>End-of-line Ends Strings 1</key>
+		<false/>
+		<key>End-of-line Ends Strings 2</key>
+		<false/>
+		<key>Escape Char in Strings 1</key>
+		<string>\</string>
+		<key>Escape Char in Strings 2</key>
+		<string>\</string>
+		<key>Identifier and Keyword Characters</key>
+		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz.$</string>
+		<key>Open Block Comments</key>
+		<string>/*</string>
+		<key>Open Line Comments</key>
+		<string>//</string>
+		<key>Open Parameter Lists</key>
+		<string>(</string>
+		<key>Open Statement Blocks</key>
+		<string>(</string>
+		<key>Open Strings 1</key>
+		<string>'</string>
+		<key>Open Strings 2</key>
+		<string>"</string>
+		<key>Prefix for Functions</key>
+		<string></string>
+		<key>Prefix for Procedures</key>
+		<string></string>
+		<key>Terminator for Prototypes 1</key>
+		<string></string>
+		<key>Terminator for Prototypes 2</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
