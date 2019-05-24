@@ -2,7 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
 	@author Nils Waldherr <nils.waldherr@filemakergarage.com>
-	@version 2.0.0-101 - 15.11.2014 - NW 
+	@version 2.0.0-101 - 15.11.2014 - NW: de, en
+	         2.1.0-101 - 24.05.2019 – NW: added BBLMLanguageSuffix, BBLMPreferredFilenameExtension for .fmfn
 -->
 <plist version="1.0">
 <dict>
@@ -873,6 +874,10 @@
 		<dict>
 			<key>BBLMLanguageSuffix</key>
 			<string>.fmsource</string>
+			<key>BBLMLanguageSuffix</key>
+			<string>.fmfn</string>
+			<key>BBLMPreferredFilenameExtension</key>
+			<string>.fmfn</string>
 		</dict>
 	</array>
 	<key>Language Features</key>
