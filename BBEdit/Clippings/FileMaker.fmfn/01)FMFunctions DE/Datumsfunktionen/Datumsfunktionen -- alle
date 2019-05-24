@@ -1,0 +1,15 @@
+#inline##INDENT#/* Datumsfunktionen 
+	Datum()
+	KalendertagZahl()
+	WochentagName()
+	WochentagNameJap()
+	WochentagZahl()
+	TagDesJahres()
+	MonatZahl()
+	MonatName()
+	MonatsNameJap()
+	KalenderWoche()
+	WocheImFiskaljahr()
+	Jahreszahl()
+	JahresNameJap()
+*/

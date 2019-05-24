@@ -1,0 +1,59 @@
+#INLINE##INDENT#/* Textfunktionen */
+
+Char( <#Zahl#> )		// Gibt die Zeichen für die Unicode-Codepunkte in der Zahl zurück.
+Code( <#Text#> )			// Gibt die Unicode-Codepunkte für die Zeichen im Text zurück. Wenn sich null Zeichen im Text befinden, wird 0 zurückgegeben.
+
+FilterZeichen( <#Text#>; <#ZuÜbernehmendeZeichen#> )	// Nur die angegebenen Zeichen in der Reihenfolge, in der sie ursprünglich in den Text eingegeben wurden
+FilterElemente( <#Text#>; <#ElementListe#> )	// Nur die angegebenen Werte in der Reihenfolge, in der sie ursprünglich in den Text eingegeben wurden
+
+/* Type Casting */
+LiesAlsCSS( <#Text#> )			// Der angegebene Text, konvertiert in das Format CSS (Cascading Style Sheets)
+LiesAlsDatum( <#Text#> )			// Datumswerte im angegebenen Text als Feldtyp "Datum" für Formeln, die Datumswerte oder Datumsfunktionen verwenden
+LiesAlsZahl( <#Text#> )			// Zahlen im angegebenen Text als Datentyp "Zahl" für Formeln, die Zahlen oder Zahlenfunktionen verwenden
+LiesAlsSVG( <#Text#> )			// Der angegebene Text, konvertiert in das Format SVG (Scalable Vector Graphics)
+LiesAlsText( <#Daten#> )			// Angegebene Zahl, angegebenes Datum, angegebene Uhrzeit oder angegebener Zeitstempel als Datentyp "Text" für Formeln, die Text oder Textfunktionen verwenden
+LiesAlsZeit( <#Text#> )			// Zeitwerte oder Zeitstempel im angegebenen Text als Datentyp "Zeit" für Formeln, die Zeitwerte oder Zeitstempelfunktionen verwenden
+LiesAlsZeitstempel( <#Text#> )	// Die angegebenen Informationen als Datentyp "Zeitstempel" für Formeln, die Zeitstempel verwenden
+LiesAlsURLVerschlüsselt( <#Text#> )	// Der angegebene Text, konvertiert mit URL-Verschlüsselung (Uniform Resource Locators)
+
+Exakt( <#Originaltext#>; <#Vergleichstext#> )			// 1 (Wahr) für eine exakte Übereinstimmung oder 0 (Falsch) für keine Übereinstimmung zwischen zwei Zeichenfolgen oder Medienfeldern
+FortlNrInTextÄndern( <##> )	// Text und Zahlen im angegebenen Wert kombiniert, wobei die Zahlen wie angegeben inkrementiert werden
+Position( <##> )		// Das angegebene Auftreten einer Suchzeichenfolge im Text, beginnend mit der angegebenen Position
+MusterAnzahl( <##> )	// Häufigkeit der Suchzeichenfolge im angegebenen Text
+Ersetzen ( <#Text#>; <#Beginn#>; <#Größe#>; <#Ersatztext#> )		// Neue Zeichenfolge, bestehend aus dem angegebenen Text wie durch den angegebenen Ersetzungstext geändert
+Austauschen( <##> )		// Zeichenfolge, die bei jedem Auftreten einer angegebenen Suchfolge im Text durch eine angegebene Ersetzungszeichenfolge ersetzt wurde
+Trimme( <##> )			// Text ohne führende oder folgende Leerzeichen
+TrimmeAlle( <##> )		// Text, von dem Leerzeichen voller Breite zwischen nicht lateinischen und lateinischen Zeichen entfernt wurden
+Zitat( <##> )			// Den angegebenen Text von doppelten Hochkommas (" ") umgeben
+
+/* Substrings */
+Länge( <#Text#> )										// Die angegebene Anzahl der Zeichen im Text, einschließlich aller Leerzeichen, Ziffern und Sonderzeichen
+ZeichenLinks( <#Text#>; <#AnzahlZeichen#> )			// Die angegebene Anzahl der Zeichen im Text, von links gezählt
+ZeichenMitte( <#Text#>; <#Beginn#>; <#AnzahlZeichen#> )	// Die angegebene Anzahl der Zeichen im Text, beginnend mit der angegebenen Zeichenposition
+ZeichenRechts( <#Text#>; <#AnzahlZeichen#> )			// Die angegebene Anzahl der Zeichen im Text, von rechts gezählt
+
+ElementeAnzahl( <#Text#> )										// Gesamtanzahl der Werte im angegebenen Text
+ElementeLinks( <#Text#>; <#AnzahlElemente#> )					// Die angegebene Anzahl der Werte im Text, von links gezählt
+ElementeMitte( <#Text#>; <#StartElement#>; <#AnzahlElemente#> )	// Die angegebene Anzahl der Werte im Text, beginnend mit einem angegebenen Wert
+ElementeRechts( <#Text#>; <#AnzahlElemente#> )					// Die angegebene Anzahl der Werte im Text, von rechts gezählt
+HoleWert( <#ListeVonWerten#>; <#WertZahl#> )					// Ein bestimmter Wert aus einer Liste von Werten
+
+WörterAnzahl( <##> )		// Gesamtanzahl der Wörter im angegebenen Text
+WörterLinks( <#Text#>; <#AnzahlWörter#> )		// Die angegebene Anzahl der Wörter im Text, von links gezählt
+WörterMitte( <##> )		// Die angegebene Anzahl der Wörter im Text, beginnend mit einem angegebenen Wort
+WörterRechts( <#Text#>; <#AnzahlWörter#> )		// Die angegebene Anzahl der Wörter im Text, von rechts gezählt
+
+/* Case */
+Kleinbuchstaben( <#Text#> )		// Alle Buchstaben im angegebenen Text als Kleinbuchstaben
+GroßKleinbuchstaben( <#Text#> )	// Der erste Buchstabe jedes Worts im angegebenen Text als Großbuchstabe und alle anderen Buchstaben als Kleinbuchstaben
+Großbuchstaben( <#Text#> )		// Alle Buchstaben im angegebenen Text als Großbuchstaben
+
+/* Japanisch */
+Hiragana( <##> )		// Hiragana aus Katakana konvertiert (Hankaku und Zenkaku)
+KanaHankaku( <##> )		// Hankaku Katakana aus Zenkaku Katakana konvertiert
+KanaZenkaku( <##> )		// Zenkaku Katakana aus Hankaku Katakana konvertiert
+KanjiNumeral( <##> )		// Kanji-Ziffern aus arabischen Ziffern konvertiert
+Katakana( <##> )		// Zenkaku Katakana aus Hiragana konvertiert
+LateinischZuHankaku( <##> )		// Hankaku (alphanumerisch und Symbole) aus Zenkaku (alphanumerisch und Symbole) konvertiert
+LateinischZuZenkaku( <##> )		// Zenkaku (alphanumerisch und Symbole) aus Hankaku (alphanumerisch und Symbole) konvertiert
+ZahlZuTextJ( <##> )		// Zahlenwerte konvertiert in japanischen Text

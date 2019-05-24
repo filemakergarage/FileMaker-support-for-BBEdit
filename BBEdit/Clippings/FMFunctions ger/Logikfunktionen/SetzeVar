@@ -1,0 +1,1 @@
+#inline#SetzeVar( <# { [ } Var1 = Ausdruck1 { #>; <# Var2 = Ausdruck2... ]} #>; <# Rechenanweisung #> )

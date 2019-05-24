@@ -1,0 +1,6 @@
+#inline##indent#SetzeVar(
+	[
+		<# Name #> = <# Wert #>
+	];
+	<# Ergebnis #>
+)

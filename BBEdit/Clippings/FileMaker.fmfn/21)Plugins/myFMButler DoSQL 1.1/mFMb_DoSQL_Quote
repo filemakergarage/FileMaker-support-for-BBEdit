@@ -1,0 +1,1 @@
+#inline#mFMb_DoSQL_Quote( string )/*	What it does:	"quotes" the string so it becomes a value that the SQL processor engine is able to understand.		Examples:		mFMb_DoSQL_Quote( "Hello" ) -> 'Hello'	mFMb_DoSQL_Quote( "Don't worry, be happy" ) -> 'Don''t worry, be happy'*/

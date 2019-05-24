@@ -1,0 +1,1 @@
+#inline#mFMb_DS_GetIdleMode/*	What it does:	It tells you which idleMode FileMaker is currently in.		Required parameters:	none		Optional parameters:	none		returns:	"userIdle" or "userNotIdle"		notes:	unsafeIdle is always around.*/

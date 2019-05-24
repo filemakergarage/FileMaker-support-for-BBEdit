@@ -1,0 +1,2 @@
+#inline##indent#@about <#beschreibung#>@author Nils Waldherr <nils.waldherr@filemakergarage.com>@version 1.0.0-100 - #DATETIME dd.MM.YYYY# @copyright ©#DATETIME YYYY# filemakergarage.com
+@version 1.0 - #DATETIME dd.MM.YYYY#@since FileMaker v<#version#>@package <#package#>@param <#type#> <#parameter name#>@return <##>@link <#URL zur Dokumentation#>@test <#test#> -> <#ergebnis#>

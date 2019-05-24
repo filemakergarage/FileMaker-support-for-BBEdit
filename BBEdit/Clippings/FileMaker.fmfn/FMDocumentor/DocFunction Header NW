@@ -1,0 +1,2 @@
+#inline##indent#/*	<#class#><#function name#> ( <#param#><#; param#> )	@about <#beschreibung#>	@author #name# <nils.waldherr(a)filemakergarage.com>	@copyright (c) #DATETIME YYYY# filemakergarage.com
+		@license http://creativecommons.org/licenses/LGPL/2.1/	@version 1.0 - #DATETIME dd.MM.YYYY#	@since FileMaker v<#version#>	@package <#package#>	@param <#type#> <#parameter name#>	@return <#type#>	@uses <#object type#> <#object name#>		@link <#URL zur Dokumentation#>		@test <#test#> -> <#ergebnis#>*/
